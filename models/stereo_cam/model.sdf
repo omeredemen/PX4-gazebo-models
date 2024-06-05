@@ -7,7 +7,7 @@
     <link name="stereo_cam/base_link">
       <inertial>
         <pose>0.03 0.03 0.03 0 0 0</pose>
-        <mass>0.050</mass>
+        <mass>0.1</mass>
         <inertia>
           <ixx>0.00004</ixx>
           <ixy>0</ixy>

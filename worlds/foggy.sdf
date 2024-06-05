@@ -200,18 +200,18 @@
       <elevation>0</elevation>
     </spherical_coordinates>
     <include>
-      <name>fg_1</name>
-      <pose>200 -300 75 0 0 0</pose>
+      <name>fog_emitter</name>
+      <pose>0 0 0 0 0 0</pose>
       <uri>
         file://fog_emitter
       </uri>
     </include>
-    <include>
+    <!-- <include>
       <name>terrain</name>
       <pose>0 0 0 0 0 0 </pose>
       <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Harmonic Terrain
       </uri>
-    </include>
+    </include> -->
   </world>
 </sdf>
