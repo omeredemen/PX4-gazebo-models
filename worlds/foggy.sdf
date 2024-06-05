@@ -7,7 +7,7 @@
     </physics>
     <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'>
       <!-- Use TPE in order to use nested models -->
-      <!-- <engine><filename>libignition-physics-tpe-plugin.so</filename></engine> -->
+      <engine><filename>libignition-physics-tpe-plugin.so</filename></engine>
     </plugin>
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
