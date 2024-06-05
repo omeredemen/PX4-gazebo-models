@@ -1,9 +1,5 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <plugin
-  filename="ignition-gazebo-particle-emitter2-system"
-  name="ignition::gazebo::systems::ParticleEmitter2">
-  </plugin>
   <model name="fog_generator">
     <static>true</static>
     <link name="link">
