@@ -7,7 +7,7 @@
     </physics>
     <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'>
       <!-- Use TPE in order to use nested models -->
-      <engine><filename>libignition-physics-tpe-plugin.so</filename></engine>
+      <!-- <engine><filename>libignition-physics-tpe-plugin.so</filename></engine> -->
     </plugin>
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
@@ -24,7 +24,6 @@
       name="ignition::gazebo::systems::ParticleEmitter2">
     </plugin>
     <gui fullscreen='false'>
-      
       <!-- 3D scene -->
       <plugin filename="MinimalScene" name="3D View">
         <gz-gui>
@@ -124,7 +123,6 @@
           <property key="showTitleBar" type="bool">false</property>
         </gz-gui>
       </plugin>
-      
       <plugin name='World control' filename='WorldControl'>
         <gz-gui>
           <title>World control</title>
@@ -200,18 +198,31 @@
       <elevation>0</elevation>
     </spherical_coordinates>
     <include>
-      <name>fog_emitter</name>
-      <pose>0 0 0 0 0 0</pose>
+      <name>fog_generator_1</name>
+      <pose>-400 1000 10 0 0 0 </pose>
       <uri>
         file://fog_emitter
       </uri>
     </include>
-    <!-- <include>
-      <name>terrain</name>
-      <pose>0 0 0 0 0 0 </pose>
+    <include>
+      <name>fog_generator_2</name>
+      <pose>500 0 10 0 0 0 </pose>
       <uri>
-        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Harmonic Terrain
+        file://fog_emitter
       </uri>
-    </include> -->
+    </include>
+    <include>
+      <name>fog_generator_3</name>
+      <pose>400 1100 10 0 0 0 </pose>
+      <uri>
+        file://fog_emitter
+      </uri>
+    </include>
+    <include>
+      <pose>0 0 1.0 0 0 0 </pose>
+      <uri>
+        https://fuel.gazebosim.org/1.0/ngxingyu/models/nathan_benderson_park1
+      </uri>
+    </include>
   </world>
 </sdf>
