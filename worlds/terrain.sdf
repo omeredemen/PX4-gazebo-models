@@ -172,10 +172,10 @@
       <static>true</static>
       <link name="link">
         <collision name="collision">
-          <pose>0 0 0.5 0 0 0</pose>
+          <pose>299 0 0.5 0 0 0</pose>
           <geometry>
             <box>
-              <size>300 300 0.1</size>
+              <size>600 600 0.1</size>
             </box>
           </geometry>
         </collision>
@@ -230,7 +230,7 @@
 
               <uri>file://media/dem/data.dt2</uri>
               <size>600 600 3</size>
-              <pos>0 0 -645</pos>
+              <pos>299 0 -645</pos>
             </heightmap>
           </geometry>
         </visual>
